@@ -19,6 +19,6 @@ Lista demarcada:
     * usada pra elencar tópicos
 
 Lista de tarefas:
-- [] Mais com mais requisitos
-- [] nesta lista posso
+- [ ] Mais com mais requisitos
+- [ ] nesta lista posso
 - [x] colocar um x no meio dos colchetes pra sinalizar uma tarefa concluída
