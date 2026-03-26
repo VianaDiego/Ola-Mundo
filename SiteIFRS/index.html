@@ -11,8 +11,11 @@
     <p>Bem-vindo ao nosso site!</p>
     <p>Este é um site para treinar conceitos do curso de <b>Programador Web</b> do <i>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</i>.</p>
 
-    <p><img src="imagens\IMG FT Gimble.png" alt="Imagem do Programador Web" height="250" ><br>
-    Essa imagem é pesada demais pro seu laptop da Xuxa.</p>
+    <p><picture>
+        <source media="(max-width: 700px)" srcset="imagens\SiteIFRS/imagens/IMG FT Gimble.png" height="500">
+        <img src="imagens\IMG FT Gimble.png" alt="Imagem do Programador Web" height="700" ><br>
+        Essa imagem é pesada demais pro seu laptop da Xuxa.
+    </picture></p>
 
     <p><audio id="pegaesseAudio" autoplay controls loop onplay="this.volume=0.05" muted>
         <source src="audios/Allégro.mp3" type="audio/mpeg">
