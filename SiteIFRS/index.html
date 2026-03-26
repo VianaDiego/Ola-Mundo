@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        @font-face {
+            font-family: ;
+            src: url();
+        }
+        /*Tambem é possivel adicionar fontes personalizadas usando @font-face ou @import, atraves de @ que são chamados de regras*/
+
+        
+        body {
+            /*Para fontes
+            -combinação segura de font-family
+            -12 tipos de medidas
+                -6 medidas absolutas: px, cm, mm, in, pt, pc
+                -6 medidas relativas: em, ex, ch, rem, vw, vh
+                ideal escolher medidas relativas para melhor responsividade do site: em
+                ! 16px = 1em
+            */
+            font-family: Arial, verdana, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            /*Short hand
+                é uma forma de escrever várias propriedades CSS relacionadas a um elemento em uma única linha, usando uma sintaxe compacta.
+                exemplo: 
+                    font: normal, 16px Arial, sans-serif; é um atalho para definir a propriedade 
+                    font-style: normal;
+                    font-size: 16px, 
+                    font-family: Arial, sans-serif; e 
+                    font-weight: normal em uma única linha.
+            */
+            font: 3em 'Times New Roman', serif; 
+            color: #f30000;
+        }
+        p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <title>Site IFRS</title>
@@ -13,7 +52,7 @@
 
     <p><picture>
         <source media="(max-width: 700px)" srcset="imagens\SiteIFRS/imagens/IMG FT Gimble.png" height="500">
-        <img src="imagens\IMG FT Gimble.png" alt="Imagem do Programador Web" height="700" ><br>
+        <img src="imagens\IMG FT Gimble.png" alt="Imagem do Programador Web" height="250" ><br>
         Essa imagem é pesada demais pro seu laptop da Xuxa.
     </picture></p>
 
