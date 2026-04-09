@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <p>Desenvolvedor Web</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo!</h2>
+            <p>Este é meu portfólio pessoal.</p>
+        </section>
+        
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Adicione informações sobre você aqui.</p>
+        </section>
+        
+        <section id="formacao">
+            <h2>Formação</h2>
+            
+            <div class="formacao-academica">
+                <h4>Formação Acadêmica</h4>
+                <p><strong>Instituição:</strong></p>
+                <p style="color: #999;">Adicionar informações da faculdade...</p>
+                <p style="margin-top: 1rem;"><strong>Curso:</strong></p>
+                <p style="color: #999;">Adicionar nome do curso...</p>
+                <p style="margin-top: 1rem;"><strong>Período:</strong></p>
+                <p style="color: #999;">Adicionar período...</p>
+            </div>
+            
+            <h3 style="margin-bottom: 1rem;">Certificados e Cursos Livres</h3>
+            <div class="certificados-grid" id="certificadosGrid">
+                <!-- Certificado 1 (com imagem) -->
+                <div class="certificado-card" onclick="abrirModal(this)" data-arquivo="imagens/certificado01.png" data-tipo="imagem">
+                    <div class="certificado-imagem" style="background-image: url('imagens/certificado01.png')"></div>
+                    <div class="certificado-info">
+                        <p><strong>Adicionar Curso 1</strong></p>
+                    </div>
+                    <div style="display: none;">
+                        <div class="detalhe-item">
+                            <strong>Instituição</strong>
+                            <p>Adicionar instituição do curso...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Descrição</strong>
+                            <p>Adicionar resumo do curso...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Carga Horária</strong>
+                            <p>Adicionar horas...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Período</strong>
+                            <p>Adicionar mês e ano...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificado 2 -->
+                <div class="certificado-card" onclick="abrirModal(this)" data-arquivo="imagens/certificado02.png">
+                    <div class="certificado-imagem" style="background-image: url('imagens/certificado02.png')"></div>
+                    <div class="certificado-info">
+                        <p><strong>Adicionar Curso 2</strong></p>
+                    </div>
+                    <div style="display: none;">
+                        <div class="detalhe-item">
+                            <strong>Instituição</strong>
+                            <p>Adicionar instituição do curso...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Descrição</strong>
+                            <p>Adicionar resumo do curso...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Carga Horária</strong>
+                            <p>Adicionar horas...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Período</strong>
+                            <p>Adicionar mês e ano...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificado 3 -->
+                <div class="certificado-card" onclick="abrirModal(this)">
+                    <div class="certificado-imagem">📜</div>
+                    <div class="certificado-info">
+                        <p><strong>Adicionar Curso 3</strong></p>
+                    </div>
+                    <div style="display: none;">
+                        <div class="detalhe-item">
+                            <strong>Instituição</strong>
+                            <p>Adicionar instituição do curso...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Descrição</strong>
+                            <p>Adicionar resumo do curso...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Carga Horária</strong>
+                            <p>Adicionar horas...</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <strong>Período</strong>
+                            <p>Adicionar mês e ano...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <p>Seus projetos aparecerão aqui.</p>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo através dos links abaixo:</p>
+            <ul class="contato-list">
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diego-viana-8822aa312/" target="_blank">seu-usuario</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/VianaDiego" target="_blank">seu-usuario</a></li>
+                <li><strong>Email:</strong> <a href="mailto:seu.email@example.com">seu.email@example.com</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- Modal para Certificados -->
+    <div id="certificadoModal" class="modal" onclick="fecharModalClique(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modalTitulo">Certificado</h3>
+                <button class="modal-close" onclick="fecharModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modalMidia" class="modal-certificado-img">📜</div>
+                <div class="modal-detalhes" id="modalDetalhes">
+                    <!-- Os detalhes serão preenchidos pelo JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function abrirModal(element) {
+            const titulo = element.querySelector('.certificado-info strong').textContent;
+            const detalhes = element.querySelector('div[style="display: none;"]').innerHTML;
+            const arquivo = element.getAttribute('data-arquivo');
+            
+            document.getElementById('modalTitulo').textContent = titulo;
+            document.getElementById('modalDetalhes').innerHTML = detalhes;
+            
+            const modalMidia = document.getElementById('modalMidia');
+            
+            // Limpar conteúdo anterior
+            modalMidia.innerHTML = '';
+            
+            // Exibir imagem do certificado
+            if (arquivo) {
+                const img = document.createElement('img');
+                img.src = arquivo;
+                img.alt = titulo;
+                modalMidia.appendChild(img);
+            } else {
+                modalMidia.textContent = '📜';
+            }
+            
+            document.getElementById('certificadoModal').classList.add('active');
+        }
+        
+        function fecharModal() {
+            document.getElementById('certificadoModal').classList.remove('active');
+        }
+        
+        function fecharModalClique(event) {
+            if (event.target.id === 'certificadoModal') {
+                fecharModal();
+            }
+        }
+        
+        // Fechar modal com tecla ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                fecharModal();
+            }
+        });
+    </script>
+</body>
+</html> 
