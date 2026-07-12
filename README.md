@@ -7,14 +7,23 @@
 
 ## 📊 Pipeline de Aprendizado (Flow State)
 
-### 🚀 Em Progresso
-- [ ] **IBM Data Science** (Progresso: 42%) -> `[Link p/ o Repositório]`
-- [ ] **IBM Data Engineering Foundations** (Progresso: 80%) -> `[Link p/ o Repositório]`
+### 🚀 Loading
+- [ ] **IBM Information Technology Support** (Progresso: 30%) ->
+- [ ] **IBM Data Science** (Progresso: 40%) -> `[Link p/ o Repositório]`
+- [ ] **IBM AI Developer** (Progresso: 35%) -> `[Link p/ o Repositório]`
 
-### ⏳ Próximas Trilhas
+### ⏳ Next
+- [ ] IBM DevOps and Software Engineering
+- [ ] IBM Full-Stack Software Developer
+- [ ] IBM Data Engineering
 - [ ] Machine Learning Specialization (DeepLearning.AI)
-- [ ] Harvard CS50x
+- [ ] IBM AI Engineering
+- [ ] IBM Generative AI Engineering
+- [ ] IBM and ISC2 Cyber Security Specialist
+- [ ] Harvard CS50
 
-### 🏆 Certificações e Conquistas
+### 🏆 Finished
+<details>
 *Aqui você pode hospedar as imagens/badges dos seus certificados finalizados antes do seu site próprio estar pronto:*
 - 🥇 **IBM Python para Data Science** (Emitido em Julho/2026) -> `[Ver Credencial](link-da-credencial)`
+</details>
